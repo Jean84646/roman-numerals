@@ -1,7 +1,11 @@
 // Business Logic
 
 
-// Recursive version
+// Recursive version.  This will break down the number into smaller portion and call back on itself
+// to solve it.  It will break down into thousands, hundreds, tens, and ones and also special cases.
+// The code call on joinRomanNumeral() to join consecutive letters together.
+// @parameter = number
+// @output = string
 var romanConverter = function(number){
   var output = "";
 

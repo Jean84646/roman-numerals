@@ -1,8 +1,14 @@
 #output-area {
   display: none;
+  color: #f2cfb3;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid #f2cfb3;
+  border-radius: 5em;
 }
 
-/*body {
+body {
   background: url('../img/Roman.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,6 +26,24 @@ h1 {
   color: #563e2b;
 }
 
-.container {
-  border-style: solid;
-}*/
+.form-control {
+  border-radius: 5em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size:30px;
+  text-align: center;
+}
+
+.button {
+  color: #563e2b;
+  border-radius: 7em;
+  border: none;
+  background-color: rgba(0,0,0,0.1)
+
+}
+
+.button:hover {
+  background-color: #f2cfb3;
+}
