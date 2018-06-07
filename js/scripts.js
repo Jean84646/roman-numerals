@@ -86,6 +86,19 @@ var swatimattRomanConverter = function (number){
 };
 
 
+// //Speed check for romanConverter
+// var time12 = Date.now();
+// for (var i = 0; i < 100000; i++) {
+//   romanConverter(1239);
+// }
+// console.log("romanConverter took " + (Date.now() - time12) + " milliseconds.");
+// // Speed check for Swatia and Matt version
+// var time11 = Date.now();
+// for (var i = 0; i < 100000; i++) {
+//   swatimattRomanConverter(1239);
+// }
+// console.log("swatimattRomanConverter took " + (Date.now() - time11) + " milliseconds.");
+
 
 
 
@@ -203,8 +216,9 @@ $(document).ready(function(){
   $("#roman-form").submit(function(event){
     event.preventDefault();
     var userInput = parseInt($("input#input-number").val());
-    var result = swatimattRomanConverter(userInput);
+    var result = romanConverter(userInput);
     $('#user-output').text(result);
+    $("#output-area").fadeIn();
   });
 
 
