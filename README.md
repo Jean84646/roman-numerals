@@ -38,15 +38,15 @@ jean84646@gmail.com
 |M       |1,000     |
 
 * Add the value of the symbols together: 2 = II
-* If more than three of the same characters in a row, switch to subtraction from the next higher value: 4 = IV
 * Separate ones, tens, hundreds, thousands, 99 is XCIX, not IC.
+* If more than three of the same characters in a row, switch to subtraction from the next higher value: 4 = IV
 * Number cannot go higher than 3,999.
 
 | Input           | Expected Output      |
 | --------------- |--------------------  |
 | 2               | II                   |
-| 4               | IV                   |
 | 99              | XCIX                 |
+| 4               | IV                   |
 | 3,999           | Out of Range         |
 
 ### Legal
