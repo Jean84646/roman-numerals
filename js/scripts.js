@@ -16,35 +16,45 @@ var romanConverter = function(number){
     for(i=1; i<= tenCount; i +=1){
       output = output.concat(singleNumberConverter(10));
     };
-    var remainder = number%10;
-      if(remainder >=5){
+    var singleRemainder = number%10;
+      if(singleRemainder >=5){
         output = output.concat(singleNumberConverter(5));
-        for(i=6; i<= remainder; i +=1){
+        for(i=6; i<= singleRemainder; i +=1){
           output = output = output.concat(singleNumberConverter(1));
         };
       } else {
-        for(i=1; i<= remainder; i +=1){
+        for(i=1; i<= singleRemainder; i +=1){
           output = output = output.concat(singleNumberConverter(1));
         };
       };
     } else if (number < 100){
       output = output.concat(singleNumberConverter(50));
-      var remainder = (number - 50) % 10;
-      var tenCount = parseInt(number/10);
+      var tenRemainder = (number - 50);
+      var tenCount = parseInt(tenRemainder/10);
+      var singleRemainder = tenRemainder%10;
         for (i=1; i<= tenCount; i +=1){
           output = output.concat(singleNumberConverter(10));
-          if(remainder >=5){
+        };
+          if(singleRemainder >=5){
             output = output.concat(singleNumberConverter(5));
-            for(i=6; i<= remainder; i +=1){
+            for(i=6; i<= singleRemainder; i +=1){
               output = output = output.concat(singleNumberConverter(1));
             };
           } else {
-            for(i=1; i<= remainder; i +=1){
+            for(i=1; i<= singleRemainder; i +=1){
             output = output = output.concat(singleNumberConverter(1));
           };
         };
+      } else if (number < 500){
+        
+
+
+
+
+
+
       };
-    };
+
   return output;
 };
 
@@ -57,7 +67,7 @@ var singleNumberConverter = function(number){
   } else if(number === 10){
     return "X";
   } else if(number === 50){
-    return "V";
+    return "L";
   } else if(number === 100){
     return "C";
   } else if(number === 500){
