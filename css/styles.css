@@ -1,21 +1,21 @@
 #output-area {
   display: none;
-  color: #f2cfb3;
+  color: #d6b64f;
   font-weight: bold;
   margin: 10px;
   padding: 10px;
-  border: 5px solid #f2cfb3;
+  border: 5px solid #d6b64f;
   border-radius: 5em;
 }
 
 body {
-  background: url('../img/Roman.jpg');
+  background: url('../img/Roman3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: skia;
   font-size: 55px;
   text-align: center;
-  color: #563e2b;
+  color: #d6b64f;
 }
 
 h1 {
@@ -23,7 +23,8 @@ h1 {
   font-size: 75px;
   text-align: center;
   font-weight: bolder;
-  color: #563e2b;
+  color: #d6b64f;
+  /*color: #563e2b; for background Roman1 */ 
 }
 
 .form-control {
@@ -45,5 +46,5 @@ h1 {
 }
 
 .button:hover {
-  background-color: #f2cfb3;
+  background-color: #d6b64f;
 }
